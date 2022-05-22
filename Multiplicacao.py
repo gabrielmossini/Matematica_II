@@ -12,11 +12,13 @@ B = np.array(Y)
 C = np.array(Z)
 
 #Vetores
+print("\nVETORES")
 print("Vetor A:", A)
 print("Vetor B:", B)
 print("Vetor C:", C)
 
 #CTE
+print("\nRESULTADO DA MULTIPLICAÇÃO")
 print("\nMultiplicacao por um CTE, K*A:", K * A)
 print("Multiplicacao por um CTE, K*B:", K * B)
 print("Multiplicacao por um CTE, K*C:", K * C)
