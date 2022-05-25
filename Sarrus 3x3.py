@@ -1,26 +1,22 @@
 import numpy as np
 
-# produto vetorial
-# |a11 a12 a13|
-# |a21 a22 a23|
-# |a31 a32 a33|
-
 #Regra de Sarrus
 # |a11 a12 a13| a11 a12|
 # |a21 a22 a23| a21 a22|
 # |a31 a32 a33| a31 a32|
 
-a11 = 2
-a12 = 1
-a13 = -1
-a21 = 1
-a22 = 3
-a23 = -1
-a31 = 5
-a32 = -2
-a33 = 10
+print("\nPosições: ")
+a11 = (int(input('Valor de a11:')))
+a12 = (int(input('Valor de a12:')))
+a13 = (int(input('Valor de a13:')))
+a21 = (int(input('Valor de a21:')))
+a22 = (int(input('Valor de a22:')))
+a23 = (int(input('Valor de a23:')))
+a31 = (int(input('Valor de a31:')))
+a32 = (int(input('Valor de a32:')))
+a33 = (int(input('Valor de a33:')))
 
-def det2x2(m):
+def det3x3(m):
   return m[0][0] * m[1][1] - m[0][1] * m[1][0]
 
 matrix = [
@@ -29,7 +25,7 @@ matrix = [
           [a31, a32, a33]
 ]
 
-print("Matix: ")
+print("\nMatrix ")
 for array in matrix: print(array)
 
 print()
@@ -43,9 +39,9 @@ dfgi = [x[::2]for x in matrix [1:]]
 degh = [x[0:2]for x in matrix[1:]]
 
 det = (
-    a* det2x2(efhi)
-    - b * det2x2(dfgi)
-    + c * det2x2(degh)
+    a* det3x3(efhi)
+    - b * det3x3(dfgi)
+    + c * det3x3(degh)
 )
 
 print(f"Determinante da matrix seguindo a Regra de Sarrus é: {det}")
