@@ -1,19 +1,33 @@
 import numpy as np
 
-X = [10,20, 5]
-Y = [5, 7, 1]
-Z = [1, 2, 8]
+(print('Soma 3x3'))
+x1 = int(input("digite o número de X1: "))
+x2 = int(input("digite o número de X2: "))
+x3 = int(input("digite o número de X3: "))
+
+y1 = int(input("\ndigite o número de Y1: "))
+y2 = int(input("digite o número de Y2: "))
+y3 = int(input("digite o número de Y3: "))
+
+z1 = int(input("\ndigite o número de Z1: "))
+z2 = int(input("digite o número de Z2: "))
+z3 = int(input("digite o número de Z3: "))
+
+
+X = [x1, x2, x3]
+Y = [y1, y2, y3]
+Z = [z1, z2, z3]
 
 vetorA = np.array(X)
 vetorB = np.array(Y)
 vetorC = np.array(Z)
 
-print("Vetor A:", vetorA)
+print("\nVetor A:", vetorA)
 print("Vetor B:", vetorB)
 print("Vetor C:", vetorC)
 
 vetor_ab = vetorA + vetorB
-print("Adicao de dois vetores, A+B:", vetor_ab)
+print("\nAdicao de dois vetores, A+B:", vetor_ab)
 
 vetor_ac = vetorA + vetorC
 print("Adicao de dois vetores, A+C:", vetor_ac)

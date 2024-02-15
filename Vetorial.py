@@ -5,7 +5,7 @@ print("\nPosições: ")
 u11 = (int(input('Valor de u11:')))
 u12 = (int(input('Valor de u12:')))
 u13 = (int(input('Valor de u13:')))
-v21 = (int(input('Valor de v21:')))
+v21 = (int(input('\nValor de v21:')))
 v22 = (int(input('Valor de v22:')))
 v23 = (int(input('Valor de v23:')))
 

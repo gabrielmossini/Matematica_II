@@ -6,15 +6,15 @@ import numpy as np
 # |a31 a32 a33| a31 a32|
 
 print("\nPosições: ")
-a11 = (int(input('Valor de a11:')))
-a12 = (int(input('Valor de a12:')))
-a13 = (int(input('Valor de a13:')))
-a21 = (int(input('Valor de a21:')))
-a22 = (int(input('Valor de a22:')))
-a23 = (int(input('Valor de a23:')))
-a31 = (int(input('Valor de a31:')))
-a32 = (int(input('Valor de a32:')))
-a33 = (int(input('Valor de a33:')))
+a11 = (int(input('Valor de a11: ')))
+a12 = (int(input('Valor de a12: ')))
+a13 = (int(input('Valor de a13: ')))
+a21 = (int(input('\nValor de a21: ')))
+a22 = (int(input('Valor de a22: ')))
+a23 = (int(input('Valor de a23: ')))
+a31 = (int(input('\nValor de a31: ')))
+a32 = (int(input('Valor de a32: ')))
+a33 = (int(input('Valor de a33: ')))
 
 def det3x3(m):
   return m[0][0] * m[1][1] - m[0][1] * m[1][0]
